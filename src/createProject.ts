@@ -175,6 +175,25 @@ export const routes: { [key: string]: RouteHandler } = {
         },
     };
 
+    const swcrc = {
+        jsc: {
+            parser: {
+                syntax: 'typescript',
+                tsx: true,
+                decorators: true,
+            },
+            target: 'es2019',
+        },
+        module: {
+            type: 'commonjs',
+        },
+    };
+
+    fs.writeFileSync(
+        path.join(projectPath, '.swcrc'),
+        JSON.stringify(swcrc, null, 2)
+    );
+
     fs.writeFileSync(
         path.join(projectPath, 'package.json'),
         JSON.stringify(packageJson, null, 2)
