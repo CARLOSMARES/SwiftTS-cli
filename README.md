@@ -57,6 +57,54 @@ O simplemente:
 swiftts help
 ```
 
+### Eliminar modulos
+
+Si necesitas eliminar un módulo o paquete a tu proyecto, puedes usar el comando `remove`:
+
+```bash
+swiftts remove <nombre-del-paquete>
+```
+
+### Construir la api
+
+Si deseas construir la api, puedes usar el comando `build`:
+
+```bash
+swiftts build
+```
+
+### Iniciar la API
+
+Si deseas iniciar la api puedes ejecutar el comando `start`:
+
+```bash
+swiftts start
+```
+
+### Iniciar los testeaos de la api
+
+Si deseas iniciar los test de la API con jest puedes ejecutar el comando `test`:
+
+```bash
+swifts test
+```
+
+### Configuracion Vercel
+
+Si deseas publicar la API en vercel con este comando se crea el archivo de configuracion y publica la API ejecutando el comando `vercel`:
+
+```bash
+swiftts vercel
+```
+
+### Iniciar la API en modo dev
+
+Si deseas iniciar la API en modo desarrollo puedes ejecutar el comando `dev`:
+
+```bash
+swiftts dev
+```
+
 ## Contribuir
 
 Si deseas contribuir a este proyecto, puedes hacerlo creando issues o PRs en el repositorio oficial.

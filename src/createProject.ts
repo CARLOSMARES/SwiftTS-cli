@@ -160,6 +160,7 @@ export const routes: { [key: string]: RouteHandler } = {
         version: '1.0.0',
         main: 'dist/server.js',
         scripts: {
+            vercel: 'vercel --prod',
             build: 'swc src -d dist',
             start: 'node dist/server.js',
             dev: 'nodemon --watch src --exec "npm run build && npm start"',
